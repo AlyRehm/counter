@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Counter</title>
+</head>
+<body>
+    <div>
+        <h1>Counter</h1>
+    </div>
+    <div>
+        <p class="fs-3 text"> {{ session['clicks'] }} times </p>
+    </div>
+    <div>
+        <a href="/" class="btn btn-primary btn-lg">Clicks</a>
+        <a href="/destroy_session" class="btn btn-danger btn-lg">Reset</a>
+    </div>
+    <div>
+        <a href="/plus_2" class="btn btn-outline-dark" btn-lg">Plus 2 Clicks</a>
+    </div>
+
+</body>
+</html>
